@@ -1,0 +1,547 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: auto 0;
+  font-family: 'Montserrat', sans-serif,'Microsoft JhengHei';
+}
+
+.fixed-bg {
+  min-height: 100vh;
+  background-size: cover;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 8%;
+  margin-bottom: 20px;
+  padding-left: 2%;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+  opacity: 0.95;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main-text {
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.sub-text {
+  color: #fff;
+  text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+}
+
+.text-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 35px 28px;
+  width: 75%;
+  padding-bottom: 78px;
+}
+
+.text-box p {
+  line-height: 2em;
+}
+
+.text-box_1 {
+  background: rgba(40, 40, 40, 0.7);
+  padding: 35px 28px;
+  width: 75%;
+  color: white;
+  padding-bottom: 78px;
+}
+
+@media (max-width: 815px) {
+  .fixed-bg {
+    background-size: auto;
+    background-attachment: scroll;
+  }
+}
+
+.text-box, .text-box_1 {
+  position: relative;
+}
+
+@media (max-width: 815px) {
+  .text-box, .text-box_1 {
+    width: 80%;
+    overflow-x: scroll;
+  }
+}
+
+.text-box-rdius {
+  border-radius: 1rem;
+}
+
+.table_1, .table_2 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.table_1 td {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 8px;
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 815px) {
+  .table_1 td {
+    font-size: 1em;
+  }
+}
+
+.table_2 td {
+  border-top: 1px solid #4c565f;
+  border-bottom: 1px solid #4c565f;
+  padding: 8px;
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 815px) {
+  .table_2 td {
+    font-size: 1em;
+  }
+}
+
+.td_r {
+  width: 35%;
+}
+
+.text-box h2, .text-box_1 h2 {
+  margin: 10px 0 10px 10px;
+  font-size: 3em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.fixed-bg p {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.text-box p {
+  color: #4c565f;
+}
+
+.link_w {
+  padding-top: 10px;
+  float: left;
+  margin-right: 25px;
+}
+
+.bg-5 .text-box_1 h1 {
+  margin-top: 20px;
+}
+
+.link {
+  display: block;
+  float: left;
+  width: 180px;
+  height: 70px;
+  border-radius: 10px;
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/ac075fd57abab369aaa4d0105571b815b0ab66fc/img/behance_b.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 60px;
+}
+
+.link:hover {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/ac075fd57abab369aaa4d0105571b815b0ab66fc/img/behance_w.svg");
+}
+
+p.mail {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.mail a {
+  font-size: 22px;
+  color: #fdfcfc;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mail a:hover {
+  color: #fa049c;
+}
+
+.bg-1 {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/5ab60b5ebdc95b92af1155732ee69b52f1d72d3b/img/my_index_0830.svg");
+}
+
+@media (max-width: 815px) {
+  .bg-1 {
+    background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/c28108b99fb3fba7e06f6b11d1380f0f845d62d8/img/my_index_0830_s.svg");
+  }
+}
+
+.bg-2 {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/1b31d8d2008b4f077f23193a9f4d74342045f467/img/my_bg1.svg");
+}
+
+@media (max-width: 815px) {
+  .bg-2 {
+    background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/79b9c0a5529312c94d04e493971b14b93549efe5/img/my_bg1_s.svg");
+  }
+}
+
+.bg-3 {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/1b31d8d2008b4f077f23193a9f4d74342045f467/img/my_bg2.svg");
+}
+
+@media (max-width: 815px) {
+  .bg-3 {
+    background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/79b9c0a5529312c94d04e493971b14b93549efe5/img/my_bg2_s.svg");
+  }
+}
+
+.bg-4 {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/1b31d8d2008b4f077f23193a9f4d74342045f467/img/my_bg3.svg");
+}
+
+@media (max-width: 815px) {
+  .bg-4 {
+    background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/79b9c0a5529312c94d04e493971b14b93549efe5/img/my_bg3_s.svg");
+  }
+}
+
+.bg-5 {
+  background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/7caea67eb3ab5777ae92c30645d587550128259e/img/my_bg4.svg");
+}
+
+@media (max-width: 815px) {
+  .bg-5 {
+    background-image: url("https://raw.githubusercontent.com/cwlworld/vbox.github.io/79b9c0a5529312c94d04e493971b14b93549efe5/img/my_bg4_s.svg");
+  }
+}
+
+.bg1 {
+  background: #1c0535;
+  color: white;
+}
+
+.close {
+  display: none;
+}
+
+.btn_switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.switch_en {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: black;
+  color: white;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.switch_ch {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: gray;
+  color: black;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.dark-light {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px #050505;
+  -webkit-box-shadow: 3px 3px 3px #050505cc;
+  -moz-box-shadow: 3px 3px 3px #050505;
+}
+
+.white-light {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  box-shadow: -2px -2px 4px #fcfcfcd3;
+  -webkit-box-shadow: -2px -2px 4px #fcfcfcd3;
+  -moz-box-shadow: -2px -2px 4px #fcfcfcd3;
+}
+
+.index_0 {
+  width: 70%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 815px) {
+  .index_0 {
+    margin-left: 2%;
+  }
+}
+
+.icon_wrap {
+  max-width: 344px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon .ibg1 {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f4f5;
+  -webkit-box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+          box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+  border-radius: 50%;
+  text-indent: 110%;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/cwlworld/vbox.github.io/ac535de91a07b8aa8d2158b6c16dd9f6032a0ef1/img/icon_70px_abu_2.svg);
+  background-size: 90%;
+  background-position: center;
+}
+
+@media (max-width: 815px) {
+  .icon .ibg1 {
+    width: 60px;
+    height: 60px;
+    background-size: 85%;
+  }
+}
+
+.icon .ibg1:hover {
+  background-color: #5ab9bd;
+}
+
+.icon .ibg2 {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f4f5;
+  -webkit-box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+          box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+  border-radius: 50%;
+  text-indent: 110%;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/cwlworld/vbox.github.io/c8e5123b284a2ec3c56edb8217f58ded7c9bde14/img/icon_70px_exp_2.svg);
+  background-size: 90%;
+  background-position: center;
+}
+
+@media (max-width: 815px) {
+  .icon .ibg2 {
+    width: 60px;
+    height: 60px;
+    background-size: 87%;
+  }
+}
+
+.icon .ibg2:hover {
+  background-color: #5ab9bd;
+}
+
+.icon .ibg3 {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f4f5;
+  -webkit-box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+          box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+  border-radius: 50%;
+  text-indent: 110%;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/cwlworld/vbox.github.io/ac535de91a07b8aa8d2158b6c16dd9f6032a0ef1/img/icon_70px_edu_2.svg);
+  background-size: 90%;
+  background-position: center;
+}
+
+@media (max-width: 815px) {
+  .icon .ibg3 {
+    width: 60px;
+    height: 60px;
+    background-size: 88%;
+  }
+}
+
+.icon .ibg3:hover {
+  background-color: #5ab9bd;
+}
+
+.icon .ibg4 {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f4f5;
+  -webkit-box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+          box-shadow: rgba(7, 7, 8, 0.5) 2px 4px 8px 2px, rgba(243, 241, 241, 0.9) -1px -1px 4px;
+  border-radius: 50%;
+  text-indent: 110%;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/cwlworld/vbox.github.io/c8e5123b284a2ec3c56edb8217f58ded7c9bde14/img/icon_70px_doc_2.svg);
+  background-size: 90%;
+  background-position: center;
+}
+
+@media (max-width: 815px) {
+  .icon .ibg4 {
+    width: 60px;
+    height: 60px;
+    background-size: 85%;
+  }
+}
+
+.footer-text-box {
+  text-align: center;
+}
+
+.toTop {
+  margin-bottom: 25px;
+}
+
+.icon .ibg4:hover {
+  background-color: #5ab9bd;
+}
+
+.fas.fa-chevron-circle-up {
+  font-size: 60px;
+}
+
+.fas.fa-chevron-circle-up:hover {
+  color: #fa049c;
+}
+/*# sourceMappingURL=all.css.map */
